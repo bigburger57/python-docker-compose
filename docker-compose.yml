@@ -8,7 +8,7 @@ services: # adds 1 service:
      - "8082:80"
     environment:
       MYSQL_ROOT_PASSWORD: admin #(Required) set the password for the root superuser account.
-      PMA_HOST: 192.168.180.31   # 192.168.180.31 define the address/hostname of the mysql server eg mysql container name.
+      PMA_HOST: 0.tcp.eu.ngrok.io:10836 # 192.168.180.31 define the address/hostname of the mysql server eg mysql container name.
       PMA_USER: root # this is the root user to login on startup
       PMA_PASSWORD: admin # use the root password to login on startup.
       MYSQL_USER: admin
